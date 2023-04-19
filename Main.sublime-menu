@@ -3,17 +3,17 @@
         "caption": "Edit",
         "children": [
             {
-                "caption" : "Wrap selected lines with P tag",
+                "caption" : "Warp every line in selected regions with P tag.",
                 "command" : "wrap_p",
                 "id": "xx_wrap_p"
             },
             {
-                "caption" : "Wrap selected lines with P tag and indent 2em",
+                "caption" : "Warp every line in selected regions with P tag and indent 2em",
                 "command" : "wrap_p_indent2em",
                 "id": "xx_wrap_p_indent2em"
             },
             {
-                "caption" : "Wrap selected text with P tag",
+                "caption" : "Warp selected text with P tag",
                 "command" : "wrap_p_sel",
                 "id": "xx_wrap_p_sel"
             },
