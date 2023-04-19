@@ -4,22 +4,22 @@
         "children": [
             {
                 "caption" : "Wrap selected lines with P tag",
-                "command" : "wrapp",
+                "command" : "wrap_p",
                 "id": "xx_wrap_p"
             },
             {
                 "caption" : "Wrap selected lines with P tag and indent 2em",
-                "command" : "wrappindent2em",
+                "command" : "wrap_p_indent2em",
                 "id": "xx_wrap_p_indent2em"
             },
             {
                 "caption" : "Wrap selected text with P tag",
-                "command" : "wrappsel",
+                "command" : "wrap_p_sel",
                 "id": "xx_wrap_p_sel"
             },
             {
                 "caption" : "Wrap selected text with P tag and indent 2em",
-                "command" : "wrappselindent2em",
+                "command" : "wrap_p_sel_indent2em",
                 "id": "xx_wrap_p_sel_indent2em"
             }
         ],

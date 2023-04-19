@@ -2,7 +2,12 @@ import sublime
 import sublime_plugin
 
 
-class WrappCommand(sublime_plugin.TextCommand):
+class WrapCommand(sublime_plugin.TextCommand):
+    '''Wrap every lines in selected region with HTML P tag'''
+
+    def name(self):
+        return  "wrap_p"
+    
     def run(self, edit):
         """wrap every lines in selected text in a <p> tag"""
         for region in self.view.sel():
@@ -17,7 +22,12 @@ class WrappCommand(sublime_plugin.TextCommand):
                 # Join the lines and replace the text
                 self.view.replace(edit, _region, "\n".join(lines))
 
-class Wrappindent2emCommand(sublime_plugin.TextCommand):
+class WrapPIndent2emCommand(sublime_plugin.TextCommand):
+    '''Wrap every lines in selected region with HTML P tag and style text-indent:2em'''
+
+    def name(self):
+        return  "wrap_p_indent2em"
+
     def run(self, edit):
         for region in self.view.sel():
             if not region.empty():
@@ -31,7 +41,12 @@ class Wrappindent2emCommand(sublime_plugin.TextCommand):
                 # Join the lines and replace whole lines
                 self.view.replace(edit, _region, "\n".join(lines))
 
-class WrappselCommand(sublime_plugin.TextCommand):
+class WrapPSelCommand(sublime_plugin.TextCommand):
+    '''Wrap selected text with HTML P tag'''
+
+    def name(self):
+        return  "wrap_p_sel"
+    
     def run(self, edit):
         """wrap selected text in a <p> tag"""
         for region in self.view.sel():
@@ -42,7 +57,12 @@ class WrappselCommand(sublime_plugin.TextCommand):
 
 			
 
-class Wrappselindent2emCommand(sublime_plugin.TextCommand):
+class WrapPSelIndent2emCommand(sublime_plugin.TextCommand):
+    '''Wrap selected text with HTML P tag and style text-indent:2em'''
+
+    def name(self):
+        return  "wrap_p_sel_indent2em"
+
     def run(self, edit):
         for region in self.view.sel():
             if not region.empty():
